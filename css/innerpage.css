@@ -101,13 +101,13 @@
 .main{
     position: absolute;
     top: 80px;
-    width: calc(100% - 242px);
+    width: 86%;
     left: 242px;
     height: 1749px;
     background: #FAFAFA 0% 0% no-repeat padding-box;;
 }
 .main-box{
-    width: 1218px;
+    width: 93%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
 }
@@ -140,10 +140,100 @@ label.label input[type="file"] {
     height: 45px;
     box-shadow: none;
 }
-
+.second{
+    width: 145px;
+    height: 44px;
+    border: 1px solid #C8242F;
+    border-radius: 22px;
+    background: white;
+}
 .input[type="radio"]{
     accent-color: #C8242F;
 }
 .input[type="checkbox"]{
     accent-color: #C8242F;
+}
+
+
+/* responsive */
+@media screen and (max-width:1432px){
+    .user img{
+        margin-left: -74px;
+    }
+    .notification{
+        margin-left: -55px;
+    }
+    .username{
+        margin-left: -32px;
+    }
+}
+
+@media (max-width:991px){
+    .topbar{
+        width: 80%;
+    }
+    .sidebar{
+        width:270px;
+        position: fixed;
+        left: -270px;
+    }
+    .main{
+        left: 20px;
+        width: auto;
+        display: inline-block;
+    }
+    .topbar{
+        width: 100%;
+    }
+    .user img{
+        margin-left: -74px;
+    }
+    .notification{
+        margin-left: -55px;
+    }
+    .username{
+        margin-left: -32px;
+    }
+    .sidebar.active{
+        left: 0px;
+    }
+    .sidebar.active~ .main{
+        width: auto;
+        margin-left: 270px;
+    }
+}
+
+@media (max-width:767px){
+    .topbar{
+        width: 80%;
+    }
+    .sidebar{
+        width:270px;
+        position: fixed;
+        left: -270px;
+    }
+    .main{
+        left: 15px;
+        width: auto;
+        display: inline-block;
+    }
+    .topbar{
+        width: 100%;
+    }
+    .user img{
+        margin-left: -83px;
+    }
+    .notification{
+        margin-left: -55px;
+    }
+    .username{
+        margin-left: -32px;
+    }
+    .sidebar.active{
+        left: 0px;
+    }
+    .sidebar.active~ .main{
+        width: auto;
+        margin-left: 270px;
+    }
 }

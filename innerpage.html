@@ -6,11 +6,12 @@
         <link rel="stylesheet" href="css/innerpage.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     </head>
     <body>
         <div class="container-fulid">
             <div class="topbar">
-                <img src="images/menu-bar.svg" alt="">
+                <img src="images/menu-bar.svg" alt="" id="menu-bar">
                 <div class="logo">
                     <img src="/images/logo.svg" alt="">
                 </div>
@@ -32,13 +33,13 @@
             <div class="sidebar">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="dashboard.html">
                             <img src="/images/dashboard-default.svg" alt="">
                             <div>Dashboard</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="innerpage.html">
                             <img src="/images/graph-default.svg" alt="">
                             <div>Analysis</div>
                         </a>
@@ -126,7 +127,7 @@
                                 <div class="row mt-2">
                                     <div class="col ms-5">
                                         <form action="" class="form-floating">
-                                            <input type="text" class="form-control" placeholder=" " aria-label="name">
+                                            <input type="text" class="form-control" placeholder=" " aria-label="name" onclick="focusFun()" id="focusdiv">
                                             <label for="focus">Focus</label>
                                         </form>
                                     </div>
@@ -149,8 +150,8 @@
                                 <div class="row mt-2">
                                     <div class="col ms-5">
                                         <form action="" class="form-floating">
-                                            <input type="text" class="form-control" placeholder="UI Designer" aria-label="name">
-                                            <label for="designation">Designation</label>
+                                            <input type="text" class="form-control" value="UI Designer" aria-label="name" onclick="desgFun()" id="designationdiv">
+                                            <label for="designation float-label" >Designation</label>
                                             <div id="emailHelp" class="form-text text-danger">Enter valid data</div>
                                         </form>
                                     </div>
@@ -181,7 +182,7 @@
                                 <h3 class="mt-4 ms-5">Other Design Elements</h3>
                                 <h5 class="mt-3 ms-5">File Upload</h5>
                                 <div class="row">
-                                    <div class="col-2">
+                                    <div class="col-lg-2 col-md-4 col-sm-3 col-2">
                                         <label class="label ms-5 mt-2">
                                             <img src="images/cloud-upload-icon.svg" alt="" class="ms-2 mt-2"><span class="ms-2 mt-2 text-danger">Upload</span>
                                             <input type="file" required/>
@@ -248,11 +249,11 @@
                                 </div>
                                 <h5 class="mt-4 ms-5">Call to action</h5>
                                 <div class="row ms-5">
-                                    <div class="col-1 me-5">
+                                    <div class="col-lg-1 me-5 col-md-2 col-sm-1 col-1">
                                         <button class="btn-danger primary"><b>Primary</b></button>
                                     </div>
-                                    <div class="col-1">
-                                        <button class="btn-outline-danger primary"><b>Secondary</b></button>
+                                    <div class="col-lg-1 col-md-2 col-sm-1 col-1">
+                                        <button class="btn-outline-danger second"><b>Secondary</b></button>
                                     </div>
                                 </div>
                                 <h5 class="mt-4 ms-5">Tabs</h5>
@@ -277,5 +278,16 @@
                 </div>
             </div>
         </div>
+        <script>
+            $('#menu-bar').click(function(){
+                $('.sidebar').toggleClass("active");
+            })
+            function focusFun() {
+                document.getElementById("focusdiv").style.borderColor = "red";
+            }
+            function desgFun() {
+                document.getElementById("designationdiv").style.borderColor = "red";
+            }
+        </script>
     </body>
 </html>

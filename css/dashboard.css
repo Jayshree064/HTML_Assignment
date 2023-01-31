@@ -264,6 +264,9 @@ thead{
     background: #F8F8F8 0% 0% no-repeat padding-box;
     border-radius: 5px;
 }
+.data-table{
+    width: 95%;
+}
 
 /* responsive */
 @media screen and (max-width:1432px){
@@ -279,6 +282,15 @@ thead{
     #pie-chart{
         width: 118%;
         margin-left: -49px;
+    }
+    .user img{
+        margin-left: -74px;
+    }
+    .notification{
+        margin-left: -55px;
+    }
+    .username{
+        margin-left: -32px;
     }
 }
 
@@ -302,6 +314,7 @@ thead{
     .invoice{
         margin-top: 440px;
         width: 95%;
+        height: fit-content;
     }
     .sidebar{
         width:270px;
@@ -309,8 +322,6 @@ thead{
         left: -270px;
     }
     .main{
-        /* left:80px;
-        width: fit-content; */
         left: 0px;
         width: 100%;
         display: inline-block;
@@ -321,7 +332,7 @@ thead{
     .user img{
         margin-left: -74px;
     }
-    .navigation{
+    .notification{
         margin-left: -55px;
     }
     .username{
@@ -341,6 +352,75 @@ thead{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-gap: 20px;
+    }
+    .data-table{
+        margin-left: 15px;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width:862px){
+    .topbar{
+        width: 80%;
+    }
+    .charts{
+        grid-template-columns: 1fr;
+    }
+    #graph{
+        width: 99%;
+    }
+    #pie-chart{
+        width: 99%;
+        margin-left: 2px;
+    }
+    #pie-chart img{
+        margin-left: 273px;
+    }
+    .invoice{
+        margin-top: 390px;
+        width: 95%;
+        height: fit-content;
+    }
+    .sidebar{
+        width:270px;
+        position: fixed;
+        left: -270px;
+    }
+    .main{
+        left: 0px;
+        width: fit-content;
+        display: inline-block;
+    }
+    .topbar{
+        width: 100%;
+    }
+    .user img{
+        margin-left: -83px;
+    }
+    .notification{
+        margin-left: -55px;
+    }
+    .username{
+        margin-left: -32px;
+    }
+    .icon-box img{
+        margin: 10px 16px 10px 0;
+    }
+    .sidebar.active{
+        left: 0px;
+    }
+    .sidebar.active~ .main{
+        width: fit-content;
+        margin-left: 270px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .data-table{
+        margin-left: 15px;
+        overflow-x: auto;
     }
 }
 
