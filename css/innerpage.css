@@ -157,6 +157,9 @@ label.label input[type="file"] {
 
 /* responsive */
 @media screen and (max-width:1432px){
+    .main{
+        overflow-x: hidden;
+    }
     .user img{
         margin-left: -74px;
     }
@@ -181,6 +184,7 @@ label.label input[type="file"] {
         left: 20px;
         width: auto;
         display: inline-block;
+        overflow-x: hidden;
     }
     .topbar{
         width: 100%;
@@ -216,6 +220,7 @@ label.label input[type="file"] {
         left: 15px;
         width: auto;
         display: inline-block;
+        overflow-x: hidden;
     }
     .topbar{
         width: 100%;

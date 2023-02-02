@@ -270,6 +270,9 @@ thead{
 
 /* responsive */
 @media screen and (max-width:1432px){
+    .main{
+        overflow-x: hidden;
+    }
     .invoice{
         margin-top: 100px;
     }
@@ -295,6 +298,9 @@ thead{
 }
 
 @media (max-width:991px){
+    .main{
+        overflow-x: hidden;
+    }
     .topbar{
         width: 80%;
     }
@@ -368,6 +374,9 @@ thead{
     }
     #graph{
         width: 99%;
+    }
+    .main{
+        overflow-x: hidden;
     }
     #pie-chart{
         width: 99%;
